@@ -31,6 +31,7 @@ class Printer {
 
             arr[tmp] = count++; // 출력해야할 작업의 count를 배열에 삽입한다.
 
+
             while(!que2.isEmpty()) {
                 que1.offer(que2.poll());
             }
