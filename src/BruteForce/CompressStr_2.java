@@ -1,5 +1,7 @@
 package BruteForce;
 
+import java.util.ArrayList;
+
 public class CompressStr_2 {
     StringBuilder sb;
     public int solution(String s) {
