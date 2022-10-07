@@ -10,7 +10,7 @@ public class Main {
         String N = br.readLine();
         StringBuilder sb = new StringBuilder();
         int len = N.length();
-        long total = 0;
+        int total = 0;
         int[] count = new int[10];
 
         for (int i = 0; i < len; i++) {
