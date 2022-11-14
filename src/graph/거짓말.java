@@ -42,14 +42,14 @@ public class Main {
                         getParent(pre);
                         getParent(post);
                     }
-                    // union-find 알고리즘 수행 
+                    // union-find 알고리즘 수행
                     // 한 파티에 있던 사람들은 무조건 부모가 하나로 수렴
                 }
             }
         }
 
         for (int i = 1; i < parent.length; i++) {
-            if (parent[getParent(i)] == 0) {
+            if (getParent(i) == 0) {
                 // 만약 부모가 0인 사람이 있다면 진실을 아는 사람이니 true
                 knowTrue[i] = true;
             }
@@ -58,7 +58,7 @@ public class Main {
         for (int i = 0; i < M; i++) {
             String[] partyStr = party[i].split(" ");
             for (int j = 1; j <= Integer.parseInt(partyStr[0]); j++) {
-                // 파티가 진실을 아는 파티인지 확인 
+                // 파티가 진실을 아는 파티인지 확인
                 // 진실을 아는 파티라면 거짓말을 할 수 없으니 answer를 하나 뺀다.
                 if (knowTrue[Integer.parseInt(partyStr[j])]) {
                     answer--;
